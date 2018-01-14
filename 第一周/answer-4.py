@@ -3,8 +3,8 @@ discount = 0.4
 
 
 def total(n):
-    cost_book = (1.0 - discount) * n
-    cost_ship = 3 + (n - 1) * 0.75
+    cost_book = price * (1.0 - discount) * n
+    cost_ship = 3 + 0.75 * (n - 1)
     return cost_book + cost_ship
 
 
